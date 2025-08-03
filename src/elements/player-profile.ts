@@ -10,11 +10,11 @@ export class PlayerProfileElement extends LitElement {
 	static styles = css`
 		.player-profile {
 			display: flex;
-			gap: 1rem;
+			gap: 1em;
 		}
 		.player-profile > img {
-			height: 4rem;
-			width: 4rem;
+			height: 4em;
+			width: 4em;
 		}
 	`;
 
