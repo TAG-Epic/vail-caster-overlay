@@ -10,11 +10,15 @@ export class PlayerProfileElement extends LitElement {
 	static styles = css`
 		.player-profile {
 			display: flex;
+			align-items: center;
 			gap: 1em;
 		}
 		.player-profile > img {
 			height: 4em;
 			width: 4em;
+		}
+		p {
+			font-size: 2em;
 		}
 		:host {
 			color: white;

@@ -22,7 +22,7 @@ export class TropicalElement extends LitElement {
 			align-items: center;
 		}
 		ass-hs-viewer {
-			--size: 8em;
+			--size: 6em;
 		}
 	`;
 
