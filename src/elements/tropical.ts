@@ -21,6 +21,9 @@ export class TropicalElement extends LitElement {
 			grid-template-columns: subgrid;
 			align-items: center;
 		}
+		ass-hs-viewer {
+			--size: 8rem;
+		}
 	`;
 
 	constructor() {

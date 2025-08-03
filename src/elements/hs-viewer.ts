@@ -25,6 +25,10 @@ export class PlayerProfileElement extends LitElement {
 		.left-arm-text {
 			display: block;
 		}
+		svg {
+			height: calc(var(--size) * 2);
+			width: calc(var(--size) * 2);
+		}
 	`;
 
 	constructor() {
@@ -58,7 +62,7 @@ export class PlayerProfileElement extends LitElement {
 	renderVisualizer(stats) {
 		const rates = this.getHitRates(stats);
 		return html`
-			<svg height="300" width="200" xmlns="http://www.w3.org/2000/svg">
+			<svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
 				<circle class="head" cx="100" cy="50" r="30" fill=${this.getColorForRate(rates.head)} />
 				<text class="head-text part-text" x="75" y="55" width="4ch">${Math.floor(rates.head * 100).toString().padStart(3, " ")}%</text>
 				<rect class="body" width="80" height="100" fill=${this.getColorForRate(rates.body)} x="60" y="90" />
