@@ -16,6 +16,9 @@ export class PlayerProfileElement extends LitElement {
 			height: 4em;
 			width: 4em;
 		}
+		:host {
+			color: white;
+		}
 	`;
 
 	constructor() {
